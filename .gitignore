@@ -143,3 +143,4 @@ cython_debug/
 
 .idea
 pgdata_api_book/
+static/
