@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==5.4.2
+coverage==5.1
+pytest-flake8==1.0.6

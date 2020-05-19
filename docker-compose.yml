@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  database:
+    container_name: api_book
+    image: postgres:11.6
+    restart: always
+    volumes:
+      - ./pgdata_api_book:/var/lib/postgresql/data
+    environment:
+      - COMPOSE_PROJECT_NAME=api_book
+      - LC_ALL=C.UTF-8
+      - POSTGRES_PASSWORD=api_book
+      - POSTGRES_USER=api_book
+    ports:
+      - 5434:5432
